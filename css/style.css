@@ -1,0 +1,218 @@
+html body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(15, 19, 24);
+  color: #fff;
+  overflow: hidden;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+.wrapper-img {
+  overflow: hidden;
+  position: relative;
+  top: 4vh;
+  left: 50%;
+  -webkit-transform: translate(-20%, 0);
+          transform: translate(-20%, 0);
+  width: 40%;
+  height: 90vh;
+}
+@media (max-width: 425px) {
+  .wrapper-img {
+    width: 60%;
+    height: 80vh;
+  }
+}
+
+img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 90vh;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.header {
+  position: absolute;
+  top: 60%;
+  left: 25%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+@media (max-width: 768px) {
+  .header {
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+    top: 30%;
+    left: 5%;
+  }
+}
+@media (max-width: 425px) {
+  .header {
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+    top: 30%;
+    left: 5%;
+  }
+}
+.header p {
+  overflow: hidden;
+  font-weight: 100;
+  font-size: 60px;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+@media (max-width: 425px) {
+  .header p {
+    font-size: 42px;
+  }
+}
+
+.char {
+  -webkit-transform: translatey(115px);
+          transform: translatey(115px);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: 8;
+}
+
+.loader-text {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0;
+  color: #fff;
+  z-index: 10;
+  font-size: 60px;
+}
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(16, 21, 30);
+  z-index: 10;
+}
+
+.images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 90vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+@media (max-width: 680px) {
+  .images {
+    width: 190vw;
+  }
+}
+
+.img {
+  width: 20vw;
+  height: 40vh;
+  background-color: #fff;
+  opacity: 0.6;
+}
+@media (max-width: 680px) {
+  .img {
+    width: 40vw;
+    height: 40vh;
+  }
+}
+
+.img-1 {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  background: url(../img/img1.jpg) 50% 50% no-repeat;
+  background-size: cover;
+}
+
+.img-2 {
+  -webkit-transform: scale(1.34);
+          transform: scale(1.34);
+  background: url(../img/img2.jpg) 50% 50% no-repeat;
+  background-size: cover;
+}
+
+.img-3 {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  background: url(../img/img3.jpg) 50% 50% no-repeat;
+  background-size: cover;
+}
+
+.img-4 {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  background: url(../img/img4.jpg) 50% 50% no-repeat;
+  background-size: cover;
+}
+
+.img-5 {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  background: url(../img/img5.jpg) 50% 50% no-repeat;
+  background-size: cover;
+}
+
+.img-6 {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  background: url(../img/img6.png) 50% 50% no-repeat;
+  background-size: cover;
+}
+
+.menu-item {
+  position: absolute;
+  font-size: 36px;
+  right: 10vh;
+  bottom: 8vh;
+  z-index: 2;
+}
+@media (max-width: 425px) {
+  .menu-item {
+    font-size: 26px;
+    right: 5vh;
+  }
+}
+.menu-item span::after {
+  content: "";
+  position: absolute;
+  width: 130%;
+  height: 130%;
+  left: -25px;
+  top: -5px;
+  border: solid 1px;
+  background-color: transparent;
+  -webkit-transform: skewX(-20deg);
+          transform: skewX(-20deg);
+}
+
+a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
